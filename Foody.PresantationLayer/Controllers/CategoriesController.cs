@@ -1,4 +1,5 @@
 ﻿using Foody.BusinessLayer.Abstract;
+using Foody.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Foody.PresantationLayer.Controllers
@@ -16,6 +17,18 @@ namespace Foody.PresantationLayer.Controllers
 		{
 			var values = _categoryService.TgetAll();
 			return View(values);
+		}
+
+		[HttpGet]
+		public IActionResult CreateCategory() 
+		{
+		return View();
+		}
+
+		[HttpPost] IActionResult CreateCategory(Category category)
+		{
+			_categoryService.TInsert(category);
+			return RedirectToAction("CategoryList");
 		}
 	}
 }
