@@ -17,9 +17,10 @@ namespace Foody.PresantationLayer.Controllers
             return View(values);
         }
 
-        public IActionResult ProductListWithCategory()
+        public IActionResult ProductListWithCategory() // return içine valu yazmazsak "gory.ExecuteAsync() in" hatası alıyoryuz
         {
-            return View();
+            var values= _productService.TProductlistWithCategory();
+            return View(values);
         }
     }
 }
