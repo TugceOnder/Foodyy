@@ -8,7 +8,7 @@ namespace Foody.DtoLayer.Dtos.SliderDtos
 {
     public class CreateSliderDto
     {
-        public int Title { get; set; }
+        public string Title { get; set; }
         public int ImageUrl { get; set; }
     }
 }

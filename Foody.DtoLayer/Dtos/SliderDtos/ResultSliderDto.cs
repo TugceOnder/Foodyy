@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Foody.DtoLayer.Dtos.SliderDtos
 {
-    public  class ResultSliderDtos
+    public  class ResultSliderDto
     {
         public int SliderId { get; set; }
-        public int Title { get; set; }
+        public string Title { get; set; }
         public int ImageUrl { get; set; }
     }
 }

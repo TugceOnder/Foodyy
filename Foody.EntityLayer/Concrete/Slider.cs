@@ -9,7 +9,8 @@ namespace Foody.EntityLayer.Concrete
     public class Slider
     {
         public int SliderId { get; set; }
-        public int Title { get; set; }
+        public string Title { get; set; }
         public int ImageUrl{ get; set; }
+       
     }
 }

@@ -20,7 +20,7 @@ namespace Foody.PresantationLayer.Controllers
         public IActionResult SliderList()
         {
             var values = _sliderService.TgetAll();
-            return View (_mapper.Map<List<ResultSliderDtos>>(values));
+            return View (_mapper.Map<List<ResultSliderDto>>(values));
         
         }
 

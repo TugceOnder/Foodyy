@@ -16,7 +16,7 @@ namespace Foody.PresantationLayer.Mapping
             CreateMap<GetByIdAboutDto, About>().ReverseMap();
             CreateMap<UpdateAboutDto, About>().ReverseMap();
 
-            CreateMap<ResultSliderDtos, Slider>().ReverseMap();
+            CreateMap<ResultSliderDto, Slider>().ReverseMap();
             CreateMap<CreateSliderDto, Slider>().ReverseMap();
             CreateMap<GetByIdSliderDto, Slider>().ReverseMap();
             CreateMap<UpdateSliderDto, Slider>().ReverseMap();
