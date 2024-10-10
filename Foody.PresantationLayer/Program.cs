@@ -19,6 +19,8 @@ builder.Services.AddScoped<IProductService, ProductManager>();
 builder.Services.AddScoped<ISliderDal, EfSliderDal>();
 builder.Services.AddScoped<ISliderService,SliderManager>();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+builder.Services.AddScoped<IAboutDal,EfAboutDal>();
+builder.Services.AddScoped<IAboutService, AboutManager>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
