@@ -10,6 +10,6 @@ namespace Foody.DtoLayer.Dtos.SliderDtos
     {
         public int SliderId { get; set; }
         public string Title { get; set; }
-        public int ImageUrl { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

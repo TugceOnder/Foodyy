@@ -23,6 +23,14 @@ builder.Services.AddScoped<IAboutDal,EfAboutDal>();
 builder.Services.AddScoped<IAboutService, AboutManager>();
 var app = builder.Build();
 
+app.UseStatusCodePages(async x =>
+{ 
+    if (x.HttpContext.Response.StatusCode == 404)
+{
+        x.HttpContext.Response.Redirect("/ErrorPages/ErrorPage404/");
+}
+
+}); 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

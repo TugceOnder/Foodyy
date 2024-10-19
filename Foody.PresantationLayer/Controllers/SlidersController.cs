@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+﻿ using AutoMapper;
 using Foody.BusinessLayer.Abstract;
 using Foody.DtoLayer.Dtos.SliderDtos;
 using Foody.EntityLayer.Concrete;
