@@ -21,6 +21,9 @@ builder.Services.AddScoped<ISliderService,SliderManager>();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddScoped<IAboutDal,EfAboutDal>();
 builder.Services.AddScoped<IAboutService, AboutManager>();
+
+builder.Services.AddScoped<IAboutItemDal, EfAbouItemDal>();
+builder.Services.AddScoped<IAboutItemService, AboutItemManager>();
 var app = builder.Build();
 
 app.UseStatusCodePages(async x =>
