@@ -25,5 +25,11 @@ namespace Foody.DataAccessLayer.EntityFramework
             var value =_context.Products.Include(x => x.Category).ToList();
             return value;
         }
+
+        public List<Product> ProductListWithCategoryAndLast12Items()
+        {
+          var values = _context.Products.OrderByDescending(x => x.ProductId).Take(12).Include(y=>y.Category).ToList();
+            return values;
+        }
     }
 }

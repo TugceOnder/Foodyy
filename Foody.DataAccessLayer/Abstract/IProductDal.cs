@@ -10,5 +10,7 @@ namespace Foody.DataAccessLayer.Abstract
     public interface IProductDal : IGenericDal <Product>
     {
         List <Product> ProductlistWithCategory ();
+
+        List<Product> ProductListWithCategoryAndLast12Items();
     }
 }
