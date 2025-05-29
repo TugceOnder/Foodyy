@@ -28,6 +28,8 @@ builder.Services.AddScoped<IFeatureService, FeatureManager>();
 
 builder.Services.AddScoped<IAboutItemDal, EfAbouItemDal>();
 builder.Services.AddScoped<IAboutItemService, AboutItemManager>();
+builder.Services.AddScoped<IReviewService, ReviewManager>();
+builder.Services.AddScoped<IReviewDal, EfReviewDal>();
 var app = builder.Build();
 
 app.UseStatusCodePages(async x =>
